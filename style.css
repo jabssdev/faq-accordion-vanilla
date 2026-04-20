@@ -56,22 +56,22 @@ body {
 	background-color: var(--clr-purple-100);
 	background-image: url("./assets/images/background-pattern-mobile.svg");
 	background-repeat: no-repeat;
-	background-size: 100% 23.2rem;
+	background-size: 100% auto;
+	background-position: top center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 16.7rem 2.4rem 2.4rem;
+	padding: 14rem 2.4rem 2.4rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
 	body {
 		background-image: url("./assets/images/background-pattern-desktop.svg");
-		background-size: 100% 32rem;
-		padding-top: 16.7rem;
+		background-size: 100% auto;
+		padding-top: 14rem;
 	}
 }
 
-/* FAQ Card */
 .faq-card {
 	background-color: var(--clr-white);
 	width: 100%;
@@ -79,10 +79,11 @@ body {
 	padding: 2.4rem;
 	border-radius: 0.8rem;
 	box-shadow: var(--shadow);
-	margin-bottom: 2.4rem;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
 	.faq-card {
 		padding: 4rem;
 		border-radius: 1.6rem;
@@ -93,7 +94,7 @@ body {
 	display: flex;
 	align-items: center;
 	gap: 2.4rem;
-	margin-bottom: 2.4rem;
+	margin-bottom: 0.5rem;
 }
 
 .faq-header img {
@@ -101,7 +102,7 @@ body {
 	height: 2.4rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
 	.faq-header {
 		margin-bottom: 3.2rem;
 	}
@@ -118,7 +119,7 @@ body {
 	color: var(--clr-purple-950);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
 	.faq-header h1 {
 		font-size: 5.6rem;
 	}
@@ -152,8 +153,9 @@ body {
 	font-weight: var(--fw-semibold);
 	color: var(--clr-purple-950);
 	gap: 2.4rem;
-	transition: color 0.2s ease;
+	transition: color 0.3s ease;
 	outline-offset: 4px;
+	font-family: var(--font-family-base);
 }
 
 .accordion-question:hover,
@@ -167,10 +169,9 @@ body {
 	height: 3rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
 	.accordion-question {
 		padding: 2.4rem 0;
-		font-size: 1.8rem;
 	}
 }
 
@@ -192,7 +193,7 @@ body {
 	overflow: hidden;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
 	.accordion-answer {
 		font-size: 1.6rem;
 	}
@@ -206,13 +207,13 @@ body {
 .attribution {
 	font-size: 1.1rem;
 	text-align: center;
-	margin-top: auto;
+	padding: 2.4rem 0;
+	width: 100%;
 }
 
 .attribution a {
 	color: var(--clr-purple-950);
 	font-weight: var(--fw-bold);
-	text-decoration: none;
 	transition: color 0.2s ease;
 }
 
