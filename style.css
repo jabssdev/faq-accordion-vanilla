@@ -175,16 +175,29 @@ body {
 }
 
 .accordion-answer {
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 0.3s ease-out;
 	color: var(--clr-purple-600);
 	font-size: 1.4rem;
 	line-height: 1.5;
+}
+
+.accordion-question[aria-expanded="true"] + .accordion-answer {
+	grid-template-rows: 1fr;
 	padding-bottom: 2rem;
+}
+
+.accordion-answer div {
 	overflow: hidden;
 }
 
 @media (min-width: 600px) {
 	.accordion-answer {
 		font-size: 1.6rem;
+	}
+
+	.accordion-question[aria-expanded="true"] + .accordion-answer {
 		padding-bottom: 2.4rem;
 	}
 }
