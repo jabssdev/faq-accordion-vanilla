@@ -1,0 +1,47 @@
+@font-face {
+	font-family: "Work Sans";
+	src: url("assets/fonts/WorkSans-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Work Sans";
+	src: url("assets/fonts/WorkSans-SemiBold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Work Sans";
+	src: url("assets/fonts/WorkSans-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	--clr-white: hsl(0, 100%, 100%);
+	--clr-purple-100: hsl(275, 100%, 97%);
+	--clr-purple-600: hsl(292, 16%, 49%);
+	--clr-purple-950: hsl(292, 42%, 14%);
+
+	--font-size-base: 62.5%;
+	--font-family-base: "Work Sans", sans-serif;
+
+	--fw-regular: 400;
+	--fw-semibold: 600;
+	--fw-bold: 700;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: var(--font-size-base);
+}
